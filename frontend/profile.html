@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Taskpal - Profile</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script defer src="assets/js/jquery.min.js"></script>
+    <script defer src="assets/js/bootstrap.min.js"></script>
+    <script defer type="module" src="assets/js/profile.js"></script>
+    <script src="assets/js/feather.min.js"></script>
+  </head>
+  <body>
+    <div class="taskbar align-items-center d-flex">
+      <img src="assets/img/logo.svg" alt="logo" class="logo" />
+      <h3 class="ms-3 fw-700 c-blue-gradient">perfil.</h3>
+      <a href="home.html" class="button d-flex d-md-none d-block ms-md-3 ms-auto">Home</a>
+    </div>
+    <div class="body">
+      <div class="h-40 d-flex align-items-end justify-content-center">
+        <img class="w-80" src="assets/img/background_profile_mobile.svg" alt="" />
+      </div>
+      <div class="h-60 d-flex flex-column bg-gray-gradient align-items-center justify-content-center">
+        <h3 class="fw-600 w-75 text-align-center justify-content-center"><span class="fw-600 c-green">Atualizar</span> o seu perfil</h3>
+        <h3 class="fw-600 w-75 text-align-center justify-content-center mb-3">Pode exigir <span class="fw-600 c-green">cautela</span>...</h3>
+        <h5 class="w-75 text-align-center mb-3">Você pode <span class="fw-600">alterar</span> seu acesso ou a sua senha. Eu recomendo que sua senha tenha ao menos 8 caracteres</h5>
+        <div class="d-flex w-75 mb-3">
+          <input id="input_username" class="form-input w-80" type="text" placeholder="Novo usuário" />
+          <div id="button_username" class="button square disabled black ms-auto"><i data-feather="check"></i></div>
+        </div>
+        <input id="input_password" class="form-input w-75 mb-3" type="password" placeholder="Nova senha" />
+        <div class="d-flex w-75">
+          <input disabled id="input_password_confirm" class="form-input w-80" type="password" placeholder="Confirmar senha" />
+          <div id="button_password" class="button square disabled black ms-auto"><i data-feather="check"></i></div>
+        </div>
+      </div>
+    </div>
+    <div class="taskbar align-items-center d-flex">
+      <h5 class="fw-600 c-dark-gray">taskpal © 2025</h5>
+      <h5 class="fw-600 c-gray ms-auto">Já bebeu água hoje?</h5>
+    </div>
+    <script>
+      feather.replace();
+    </script>
+  </body>
+</html>

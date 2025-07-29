@@ -1,0 +1,415 @@
+:root {
+  --black: #253d6b;
+  --dark-gray: #abc2eb;
+  --gray: #cfdbf1;
+  --light-gray: #d8e0f0;
+  --white: #e0e5ed;
+  --blue: #436fc3;
+  --green: #57a773;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../fonts/Poppins/Poppins-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../fonts/Poppins/Poppins-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../fonts/Poppins/Poppins-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../fonts/Poppins/Poppins-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100vh;
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--white);
+  font-size: 62.5%;
+}
+
+i,
+a,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: var(--black);
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 72px;
+}
+
+h2 {
+  font-size: 48px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+a,
+h5 {
+  font-size: 14px;
+}
+
+svg {
+  margin: 0;
+  padding: 0;
+}
+
+.h-5 {
+  height: 5%;
+}
+
+.h-10 {
+  height: 10%;
+}
+
+.h-20 {
+  height: 20%;
+}
+
+.h-25 {
+  height: 25%;
+}
+
+.h-30 {
+  height: 30%;
+}
+
+.h-40 {
+  height: 40%;
+}
+
+.h-60 {
+  height: 60%;
+}
+
+.h-70 {
+  height: 70%;
+}
+
+.w-auto {
+  width: auto;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.w-80 {
+  width: 80%;
+}
+
+.w-74 {
+  width: 74%;
+}
+
+.w-70 {
+  width: 70%;
+}
+
+.w-49 {
+  width: 49%;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+
+.c-black {
+  color: var(--black);
+}
+
+.c-dark-gray {
+  color: var(--dark-gray);
+}
+
+.c-gray {
+  color: var(--gray);
+}
+
+.c-white {
+  color: var(--white);
+}
+
+.c-green {
+  color: var(--green);
+}
+
+.c-blue {
+  color: var(--blue);
+}
+
+.border {
+  border-radius: 10px;
+}
+
+.bg-blue {
+  background-color: var(--blue);
+}
+
+.bg-light-gray {
+  background-color: var(--light-gray);
+}
+
+.bg-gray {
+  background-color: var(--gray);
+}
+
+.bg-gray-gradient {
+  background: linear-gradient(to bottom, var(--light-gray) 0%, var(--white) 100%);
+}
+
+.c-blue-gradient {
+  background: linear-gradient(to bottom, #20355d 0%, #436fc3 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.text-align-justify {
+  text-align: justify;
+}
+
+.bubble {
+  background-color: var(--light-gray);
+  padding: 15px 15px;
+  border-radius: 10px;
+  background: linear-gradient(to right, var(--gray), var(--light-gray), var(--gray));
+}
+
+.taskbar {
+  height: 10vh;
+  width: 100vw;
+  align-content: center;
+  padding-left: 5%;
+  padding-right: 5%;
+  user-select: none;
+  text-align: center;
+  border: 1px solid var(--light-gray);
+  background: linear-gradient(to bottom, var(--light-gray) 0%, var(--white) 100%);
+}
+
+.body {
+  height: 80vh;
+  width: 100vw;
+  user-select: none;
+}
+
+.logo {
+  height: 50%;
+  user-select: none;
+}
+
+.overflow-y-auto {
+  overflow-y: auto;
+  scrollbar-color: transparent transparent;
+  overflow-x: hidden;
+}
+
+.button {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--black);
+  align-items: center;
+  justify-content: center;
+  background: var(--gray);
+  display: flex;
+  padding: 0px 30px;
+  margin: 0;
+  height: 45px;
+  border-radius: 10px;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.button.square {
+  height: 45px;
+  width: 45px;
+  padding: 0px;
+}
+
+.button.blue {
+  color: var(--white);
+  background-color: var(--blue);
+}
+
+.button.green {
+  color: var(--white) !important;
+  background-color: var(--green) !important;
+}
+
+.button.white {
+  color: var(--black);
+  background-color: var(--gray);
+}
+
+.button.black {
+  color: var(--white);
+  background-color: var(--black);
+}
+
+.button:hover {
+  color: var(--white);
+  transform: scale(1.075);
+  background-color: var(--black);
+  cursor: pointer;
+}
+
+.button.disabled,
+.button:disabled {
+  background-color: var(--gray) !important;
+}
+
+.button.disabled:hover,
+.button:disabled:hover {
+  cursor: default;
+  transform: scale(1);
+}
+
+.form-input {
+  border-radius: 10px;
+  border: none;
+  background-color: var(--gray);
+  font-size: 14px;
+  padding: 10px;
+  margin: 0px;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  border-style: none;
+  border: 2px solid var(--light-gray);
+  color: var(--blue);
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.form-input:disabled {
+  border-radius: 10px;
+  border: none;
+  background-color: var(--gray);
+  font-size: 14px;
+  padding: 10px;
+  margin: 0px;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  border-style: none;
+  border: 2px solid var(--gray);
+  color: var(--dark-gray);
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.form-input:focus {
+  outline: none;
+  transform: scale(1.025);
+}
+
+#loading-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(var(--dark-gray), 0.5);
+  backdrop-filter: blur(4px);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.spinner {
+  width: 48px;
+  height: 48px;
+  border: 10px solid var(--black);
+  border-bottom-color: var(--blue);
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+.spinner.fit {
+  width: 24px;
+  height: 24px;
+    border: 10px solid var(--white);
+  border-bottom-color: var(--gray);
+}
+
+#notification-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(var(--dark-gray), 0.5);
+  backdrop-filter: blur(4px);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.notification-bubble {
+  background-color: var(--light-gray);
+  padding: 15px 15px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--black);
+  border: 2px solid var(--gray);
+  cursor: pointer;
+  text-align: center;
+  max-width: 80%;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 768px) {
+}

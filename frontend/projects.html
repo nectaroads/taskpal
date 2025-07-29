@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Taskpal - Projects</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script defer src="assets/js/jquery.min.js"></script>
+    <script defer src="assets/js/bootstrap.min.js"></script>
+    <script defer type="module" src="assets/js/projects.js"></script>
+    <script src="assets/js/feather.min.js"></script>
+  </head>
+  <body>
+    <div class="taskbar align-items-center d-flex">
+      <img src="assets/img/logo.svg" alt="logo" class="logo" />
+      <h3 class="ms-3 fw-700 c-blue-gradient">projetos.</h3>
+      <a href="home.html" class="button d-flex d-md-none d-block ms-md-3 ms-auto">Home</a>
+    </div>
+    <div class="body d-flex flex-column">
+      <div class="h-30 d-flex align-items-end justify-content-center">
+        <img class="w-80" src="assets/img/background_profile_mobile.svg" alt="" />
+      </div>
+      <div class="h-70 d-flex flex-column bg-gray-gradient align-items-center justify-content-center">
+        <h3 class="fw-600 w-75 text-align-center justify-content-center">Centro de <span class="fw-600 c-green">projetinhos</span></h3>
+        <h3 class="fw-600 w-75 text-align-center justify-content-center mb-3">Tudo em um só lugar<span class="fw-600 c-green"></span>!</h3>
+        <h5 class="w-75 text-align-center mb-3"><span class="fw-600">Crie</span> ou <span class="fw-600">acompanhe</span> novos projetos, <span class="fw-600">gerencie</span> os quais participa, você faz as regras! Conhece algum convite?</h5>
+        <a href="create_project.html" class="button black w-75 mb-3">Novo projeto</a>
+        <div class="d-flex w-75 mb-3">
+          <input id="input_new_project" class="form-input w-80" type="text" placeholder="Código de convite" />
+          <div id="button_new_project" class="button square disabled black ms-auto"><i data-feather="check"></i></div>
+        </div>
+        <div id="list_projects" class="h-30 w-75 border overflow-y-auto">
+          <div class="button d-flex justify-content-center mb-3 disabled"><div class="spinner fit"></div></div>
+          <div class="button d-flex justify-content-center mb-3 disabled"><div class="spinner fit"></div></div>
+          <div class="button d-flex justify-content-center disabled"><div class="spinner fit"></div></div>
+        </div>
+      </div>
+    </div>
+    <div class="taskbar align-items-center d-flex">
+      <h5 class="fw-600 c-dark-gray">taskpal © 2025</h5>
+      <h5 class="fw-600 c-gray ms-auto">Já bebeu água hoje?</h5>
+    </div>
+    <script>
+      feather.replace();
+    </script>
+  </body>
+</html>

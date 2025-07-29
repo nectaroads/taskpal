@@ -1,0 +1,30 @@
+{
+  "name": "clockinmanager",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nectaroads/clockinmanager.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nectaroads/clockinmanager/issues"
+  },
+  "homepage": "https://github.com/nectaroads/clockinmanager#readme",
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "clockinmanager": "file:",
+    "crypto": "^1.0.1",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "fs": "^0.0.1-security",
+    "path": "^0.12.7",
+    "pg": "^8.16.0"
+  }
+}

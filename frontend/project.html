@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Taskpal - Project</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script defer src="assets/js/jquery.min.js"></script>
+    <script defer src="assets/js/bootstrap.min.js"></script>
+    <script defer type="module" src="assets/js/project.js"></script>
+    <script src="assets/js/feather.min.js"></script>
+  </head>
+  <body>
+    <div class="taskbar align-items-center d-flex">
+      <img src="assets/img/logo.svg" alt="logo" class="logo" />
+      <h3 class="ms-3 fw-700 c-blue-gradient">projeto.</h3>
+      <a href="projects.html" class="button d-flex d-md-none d-block ms-md-3 ms-auto">Projetos</a>
+    </div>
+    <div class="body d-flex flex-column">
+      <div class="h-30 d-flex align-items-end justify-content-center">
+        <img class="w-80" src="assets/img/background_profile_mobile.svg" alt="" />
+      </div>
+      <div class="h-70 d-flex flex-column bg-gray-gradient align-items-center justify-content-center">
+        <h3 class="fw-600 w-75 text-align-center justify-content-center mb-3">Projeto <span id="text_project" class="fw-600 c-green">projeto</span></h3>
+        <h5 class="w-75 text-align-center mb-3"><span class="fw-600">Descrição do projeto</span>, descreve objetivos, coisas do gênero.</h5>
+        <div id="button_clock" class="button blue w-75 mb-3 disabled">Bater ponto</div>
+        <div id="button_clock" class="button blue w-75 mb-3">Membros</div>
+        <div id="button_clock" class="button blue w-75 mb-3">Pontos</div>
+        <div id="button_clock" class="button blue w-75 mb-3">Abandonar</div>
+      </div>
+    </div>
+    <div class="taskbar align-items-center d-flex">
+      <h5 class="fw-600 c-dark-gray">taskpal © 2025</h5>
+      <h5 class="fw-600 c-gray ms-auto">Já bebeu água hoje?</h5>
+    </div>
+    <script>
+      feather.replace();
+    </script>
+  </body>
+</html>

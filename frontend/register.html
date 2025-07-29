@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Taskpal - Register</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script defer src="assets/js/jquery.min.js"></script>
+    <script defer src="assets/js/bootstrap.min.js"></script>
+    <script defer type="module" src="assets/js/register.js"></script>
+    <script src="assets/js/feather.min.js"></script>
+  </head>
+  <body>
+    <div class="taskbar align-items-center d-flex">
+      <img src="assets/img/logo.svg" alt="logo" class="logo" />
+      <h3 class="ms-3 fw-700 c-blue-gradient">registro.</h3>
+      <a href="index.html" class="button d-flex d-md-none d-block ms-md-3 ms-auto">Início</a>
+    </div>
+    <div class="body">
+      <div class="h-40 d-flex align-items-end justify-content-center">
+        <img class="w-80" src="assets/img/background_register_mobile.svg" alt="" />
+      </div>
+      <div class="h-60 d-flex flex-column bg-gray-gradient align-items-center justify-content-center">
+        <h3 class="fw-600 w-75 text-align-center justify-content-center mb-3">Faça parte da <span class="fw-600 c-green">equipe</span> não demora nada <span class="fw-600 c-green">;D</span></h3>
+        <h5 class="w-75 text-align-center mb-3">Por favor, <a class="fw-600">insira as suas credenciais</a> para que registre uma nova conta de acesso. É intuitivo, veloz e gratuito!</h5>
+        <input id="input_username" class="form-input w-75 mb-3" type="text" placeholder="Usuário" />
+        <input id="input_password" class="form-input w-75 mb-3" type="password" placeholder="Senha" />
+        <input id="input_password_confirm" class="form-input w-75 mb-3" disabled type="password" placeholder="Repetir senha" />
+        <div id="button_register" class="button black disabled w-75">Registrar</div>
+      </div>
+    </div>
+    <div class="taskbar align-items-center d-flex">
+      <h5 class="fw-600 c-dark-gray">taskpal © 2025</h5>
+      <h5 class="fw-600 c-gray ms-auto">Já bebeu água hoje?</h5>
+    </div>
+    <script>
+      feather.replace();
+    </script>
+  </body>
+</html>
